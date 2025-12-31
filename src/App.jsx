@@ -1,7 +1,8 @@
 import { useState } from 'react'
 // import LifecycleLogger from './components/LifecycleLogger'
 // import LifecycleLogger from './components/LifecycleLoggerClass'
-import MyLifecycleLoggerClass from './components/MyLifcycleLoggerClass'
+// import MyLifecycleLoggerClass from './components/MyLifecycleLoggerClass'
+import MyLifecycleLogger from './components/MyLifecycleLogger'
 
 function App() {
   const [showLogger, setShowLogger] = useState(false)
@@ -18,7 +19,7 @@ function App() {
         {showLogger ? 'Unmount Logger' : 'Mount Logger'}
       </button>
 
-      {showLogger && <MyLifecycleLoggerClass />}
+      {showLogger && <MyLifecycleLogger />}
     </div>
   )
 }
